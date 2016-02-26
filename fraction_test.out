@@ -1,0 +1,717 @@
+
+@@@@@@@@@@@@@@@@@@ Part 1 @@@@@@@@@@@@@@@@@@@@@@
+1: a =(0/1)  b=(1234567890/1)  c=(-2/15) d=(-19218107004115226/4115226329218107)
+2: a =(2924/3)  b=(1234567890/1)  c=(-2/15) d=(-19218107004115226/4115226329218107) e=(2924/3)
+3: a =(1212/11)  b=(1234567890/1)  c=(-2/15) d=(-19218107004115226/4115226329218107) e=(1212/11)
+4: d.num=-19218107004115226    d.denom=4115226329218107
+5: d.sign=-1
+6: d.realValue=-4.67
+7: d.integerPart=-4
+8: d.fractionalPart=-0.67
+9: a =(7234/6880183)
+10: a =(-600891881/6880183)
+11: a =(600891881/85113)
+12: a =(-600891881/85113)
+13: a =(600891881/85113)
+14: a =(79214/85113)  quotient=7059
+15: a =(2/7)  b=(2/7)	a = b	a <= b	a >= b
+16: a =(241/840)  b=(2/7)	a > b	a >= b
+17: a =(240/841)  b=(2/7)	a < b	a <= b
+18: a =(2/7)  b=(-2/7)	a > b	a >= b
+19: a =(9348939423911/291100020484011111)  b=(9348139423911/291100020484011112)
+Overflow in compare!3
+20: a =(1/8)  x=0.125	a = x	a >= x	a <= x
+21: a =(93489394239/2911000204840)  x=0.0321159	a > x	a >= x
+22: a =(93489394239/2911000204840)  x=0.0321165	a < x	a <= x
+23: a =(1/8)  x=0.125	x = a	x >= a	x <= a
+24: a =(93489394239/2911000204840)  x=0.0321159	x < a	x <= a
+25: a =(93489394239/2911000204840)  x=0.0321165	x > a	x >= a
+
+@@@@@@@@@@@@@@@@@@ Part 2 @@@@@@@@@@@@@@@@@@@@@@
+
+===============Round 1================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(1/2)
+Enter two long long integers for fraction D => 2: D=(4/5)
+Enter two integers m and n => m =2	  n=3
+
+
+ACTION: A = C; B = D;
+RESULT: A =(1/2)  B=(4/5)  C=(1/2)  D=(4/5)
+
+ACTION: C = A + B
+RESULT: A =(1/2)  B=(4/5)  C=(13/10)
+
+ACTION: C = A - B
+RESULT: A =(1/2)  B=(4/5)  C=(-3/10)
+
+ACTION: C = A * B
+RESULT: A =(1/2)  B=(4/5)  C=(2/5)
+
+ACTION: C = A / B
+RESULT: A =(1/2)  B=(4/5)  C=(5/8)
+
+ACTION: C = C + 1
+RESULT: C=(13/8)
+
+ACTION: C = C - 1
+RESULT: C=(5/8)
+
+ACTION: D = A + m
+RESULT: A=(1/2)  m=2  D=(5/2)
+
+ACTION: D = m + A
+RESULT: A=(1/2)  m=2  D=(5/2)
+
+ACTION: D = A * n
+RESULT: A=(1/2)  n=3  D=(3/2)
+
+ACTION: D = n * A
+RESULT: A=(1/2)  n=3  D=(3/2)
+
+ACTION: D = n / A
+RESULT: A=(1/2)  n=3  D=(6/1)
+
+ACTION: D = A / n
+RESULT: A=(1/2)  n=3  D=(1/6)
+
+ACTION: D = (A * C) - B/C  + n
+RESULT: A=(1/2) B=(4/5) C=(5/8) n=3  D=(813/400)
+
+ACTION: C = 1 / C
+RESULT: C=(8/5)
+
+ACTION: C = -C
+RESULT: C=(-8/5)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 2================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(1/2)
+Enter two long long integers for fraction D => 2: D=(1/4)
+Enter two integers m and n => m =3	  n=4
+
+
+ACTION: A = C; B = D;
+RESULT: A =(1/2)  B=(1/4)  C=(1/2)  D=(1/4)
+
+ACTION: C = A + B
+RESULT: A =(1/2)  B=(1/4)  C=(3/4)
+
+ACTION: C = A - B
+RESULT: A =(1/2)  B=(1/4)  C=(1/4)
+
+ACTION: C = A * B
+RESULT: A =(1/2)  B=(1/4)  C=(1/8)
+
+ACTION: C = A / B
+RESULT: A =(1/2)  B=(1/4)  C=(2/1)
+
+ACTION: C = C + 1
+RESULT: C=(3/1)
+
+ACTION: C = C - 1
+RESULT: C=(2/1)
+
+ACTION: D = A + m
+RESULT: A=(1/2)  m=3  D=(7/2)
+
+ACTION: D = m + A
+RESULT: A=(1/2)  m=3  D=(7/2)
+
+ACTION: D = A * n
+RESULT: A=(1/2)  n=4  D=(2/1)
+
+ACTION: D = n * A
+RESULT: A=(1/2)  n=4  D=(2/1)
+
+ACTION: D = n / A
+RESULT: A=(1/2)  n=4  D=(8/1)
+
+ACTION: D = A / n
+RESULT: A=(1/2)  n=4  D=(1/8)
+
+ACTION: D = (A * C) - B/C  + n
+RESULT: A=(1/2) B=(1/4) C=(2/1) n=4  D=(39/8)
+
+ACTION: C = 1 / C
+RESULT: C=(1/2)
+
+ACTION: C = -C
+RESULT: C=(-1/2)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 3================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(12/23)
+Enter two long long integers for fraction D => 2: D=(33/14)
+Enter two integers m and n => m =4	  n=5
+
+
+ACTION: A = C; B = D;
+RESULT: A =(12/23)  B=(33/14)  C=(12/23)  D=(33/14)
+
+ACTION: C = A + B
+RESULT: A =(12/23)  B=(33/14)  C=(927/322)
+
+ACTION: C = A - B
+RESULT: A =(12/23)  B=(33/14)  C=(-591/322)
+
+ACTION: C = A * B
+RESULT: A =(12/23)  B=(33/14)  C=(198/161)
+
+ACTION: C = A / B
+RESULT: A =(12/23)  B=(33/14)  C=(56/253)
+
+ACTION: C = C + 1
+RESULT: C=(309/253)
+
+ACTION: C = C - 1
+RESULT: C=(56/253)
+
+ACTION: D = A + m
+RESULT: A=(12/23)  m=4  D=(104/23)
+
+ACTION: D = m + A
+RESULT: A=(12/23)  m=4  D=(104/23)
+
+ACTION: D = A * n
+RESULT: A=(12/23)  n=5  D=(60/23)
+
+ACTION: D = n * A
+RESULT: A=(12/23)  n=5  D=(60/23)
+
+ACTION: D = n / A
+RESULT: A=(12/23)  n=5  D=(115/12)
+
+ACTION: D = A / n
+RESULT: A=(12/23)  n=5  D=(12/115)
+
+ACTION: D = (A * C) - B/C  + n
+RESULT: A=(12/23) B=(33/14) C=(56/253) n=5  D=(-25245503/4562096)
+
+ACTION: C = 1 / C
+RESULT: C=(253/56)
+
+ACTION: C = -C
+RESULT: C=(-253/56)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 4================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(7/2)
+Enter two long long integers for fraction D => 2: D=(3/1)
+Enter two integers m and n => m =5	  n=6
+
+
+ACTION: A = C; B = D;
+RESULT: A =(7/2)  B=(3/1)  C=(7/2)  D=(3/1)
+
+ACTION: C = A + B
+RESULT: A =(7/2)  B=(3/1)  C=(13/2)
+
+ACTION: C = A - B
+RESULT: A =(7/2)  B=(3/1)  C=(1/2)
+
+ACTION: C = A * B
+RESULT: A =(7/2)  B=(3/1)  C=(21/2)
+
+ACTION: C = A / B
+RESULT: A =(7/2)  B=(3/1)  C=(7/6)
+
+ACTION: C = C + 1
+RESULT: C=(13/6)
+
+ACTION: C = C - 1
+RESULT: C=(7/6)
+
+ACTION: D = A + m
+RESULT: A=(7/2)  m=5  D=(17/2)
+
+ACTION: D = m + A
+RESULT: A=(7/2)  m=5  D=(17/2)
+
+ACTION: D = A * n
+RESULT: A=(7/2)  n=6  D=(21/1)
+
+ACTION: D = n * A
+RESULT: A=(7/2)  n=6  D=(21/1)
+
+ACTION: D = n / A
+RESULT: A=(7/2)  n=6  D=(12/7)
+
+ACTION: D = A / n
+RESULT: A=(7/2)  n=6  D=(7/12)
+
+ACTION: D = (A * C) - B/C  + n
+RESULT: A=(7/2) B=(3/1) C=(7/6) n=6  D=(631/84)
+
+ACTION: C = 1 / C
+RESULT: C=(6/7)
+
+ACTION: C = -C
+RESULT: C=(-6/7)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 5================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(13/19)
+Enter two long long integers for fraction D => 2: D=(1/3)
+Enter two integers m and n => m =3	  n=4
+
+
+ACTION: A = C; B = D;
+RESULT: A =(13/19)  B=(1/3)  C=(13/19)  D=(1/3)
+
+ACTION: C = A + B
+RESULT: A =(13/19)  B=(1/3)  C=(58/57)
+
+ACTION: C = A - B
+RESULT: A =(13/19)  B=(1/3)  C=(20/57)
+
+ACTION: C = A * B
+RESULT: A =(13/19)  B=(1/3)  C=(13/57)
+
+ACTION: C = A / B
+RESULT: A =(13/19)  B=(1/3)  C=(39/19)
+
+ACTION: C = C + 1
+RESULT: C=(58/19)
+
+ACTION: C = C - 1
+RESULT: C=(39/19)
+
+ACTION: D = A + m
+RESULT: A=(13/19)  m=3  D=(70/19)
+
+ACTION: D = m + A
+RESULT: A=(13/19)  m=3  D=(70/19)
+
+ACTION: D = A * n
+RESULT: A=(13/19)  n=4  D=(52/19)
+
+ACTION: D = n * A
+RESULT: A=(13/19)  n=4  D=(52/19)
+
+ACTION: D = n / A
+RESULT: A=(13/19)  n=4  D=(76/13)
+
+ACTION: D = A / n
+RESULT: A=(13/19)  n=4  D=(13/76)
+
+ACTION: D = (A * C) - B/C  + n
+RESULT: A=(13/19) B=(1/3) C=(39/19) n=4  D=(221408/42237)
+
+ACTION: C = 1 / C
+RESULT: C=(19/39)
+
+ACTION: C = -C
+RESULT: C=(-19/39)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 6================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(828/991)
+Enter two long long integers for fraction D => 2: D=(121/34)
+Enter two integers m and n => m =7	  n=3
+
+
+ACTION: A = C; B = D;
+RESULT: A =(828/991)  B=(121/34)  C=(828/991)  D=(121/34)
+
+ACTION: C = A + B
+RESULT: A =(828/991)  B=(121/34)  C=(148063/33694)
+
+ACTION: C = A - B
+RESULT: A =(828/991)  B=(121/34)  C=(-91759/33694)
+
+ACTION: C = A * B
+RESULT: A =(828/991)  B=(121/34)  C=(50094/16847)
+
+ACTION: C = A / B
+RESULT: A =(828/991)  B=(121/34)  C=(28152/119911)
+
+ACTION: C = C + 1
+RESULT: C=(148063/119911)
+
+ACTION: C = C - 1
+RESULT: C=(28152/119911)
+
+ACTION: D = A + m
+RESULT: A=(828/991)  m=7  D=(7765/991)
+
+ACTION: D = m + A
+RESULT: A=(828/991)  m=7  D=(7765/991)
+
+ACTION: D = A * n
+RESULT: A=(828/991)  n=3  D=(2484/991)
+
+ACTION: D = n * A
+RESULT: A=(828/991)  n=3  D=(2484/991)
+
+ACTION: D = n / A
+RESULT: A=(828/991)  n=3  D=(991/276)
+
+ACTION: D = A / n
+RESULT: A=(828/991)  n=3  D=(276/991)
+
+ACTION: D = (A * C) - B/C  + n
+RESULT: A=(828/991) B=(121/34) C=(28152/119911) n=3  D=(-1360620610708519/113741997299568)
+
+ACTION: C = 1 / C
+RESULT: C=(119911/28152)
+
+ACTION: C = -C
+RESULT: C=(-119911/28152)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 7================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(82301/23239)
+Enter two long long integers for fraction D => 2: D=(3/223)
+Enter two integers m and n => m =10	  n=12
+
+
+ACTION: A = C; B = D;
+RESULT: A =(82301/23239)  B=(3/223)  C=(82301/23239)  D=(3/223)
+
+ACTION: C = A + B
+RESULT: A =(82301/23239)  B=(3/223)  C=(18422840/5182297)
+
+ACTION: C = A - B
+RESULT: A =(82301/23239)  B=(3/223)  C=(18283406/5182297)
+
+ACTION: C = A * B
+RESULT: A =(82301/23239)  B=(3/223)  C=(246903/5182297)
+
+ACTION: C = A / B
+RESULT: A =(82301/23239)  B=(3/223)  C=(18353123/69717)
+
+ACTION: C = C + 1
+RESULT: C=(18422840/69717)
+
+ACTION: C = C - 1
+RESULT: C=(18353123/69717)
+
+ACTION: D = A + m
+RESULT: A=(82301/23239)  m=10  D=(314691/23239)
+
+ACTION: D = m + A
+RESULT: A=(82301/23239)  m=10  D=(314691/23239)
+
+ACTION: D = A * n
+RESULT: A=(82301/23239)  n=12  D=(987612/23239)
+
+ACTION: D = n * A
+RESULT: A=(82301/23239)  n=12  D=(987612/23239)
+
+ACTION: D = n / A
+RESULT: A=(82301/23239)  n=12  D=(278868/82301)
+
+ACTION: D = A / n
+RESULT: A=(82301/23239)  n=12  D=(82301/278868)
+
+ACTION: D = (A * C) - B/C  + n
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = 1 / C
+RESULT: C=(69717/18353123)
+
+ACTION: C = -C
+RESULT: C=(-69717/18353123)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 8================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(1/188181)
+Enter two long long integers for fraction D => 2: D=(9919/25)
+Enter two integers m and n => m =12	  n=34
+
+
+ACTION: A = C; B = D;
+RESULT: A =(1/188181)  B=(9919/25)  C=(1/188181)  D=(9919/25)
+
+ACTION: C = A + B
+RESULT: A =(1/188181)  B=(9919/25)  C=(1866567364/4704525)
+
+ACTION: C = A - B
+RESULT: A =(1/188181)  B=(9919/25)  C=(-1866567314/4704525)
+
+ACTION: C = A * B
+RESULT: A =(1/188181)  B=(9919/25)  C=(1417/672075)
+
+ACTION: C = A / B
+RESULT: A =(1/188181)  B=(9919/25)  C=(25/1866567339)
+
+ACTION: C = C + 1
+RESULT: C=(1866567364/1866567339)
+
+ACTION: C = C - 1
+RESULT: C=(25/1866567339)
+
+ACTION: D = A + m
+RESULT: A=(1/188181)  m=12  D=(2258173/188181)
+
+ACTION: D = m + A
+RESULT: A=(1/188181)  m=12  D=(2258173/188181)
+
+ACTION: D = A * n
+RESULT: A=(1/188181)  n=34  D=(34/188181)
+
+ACTION: D = n * A
+RESULT: A=(1/188181)  n=34  D=(34/188181)
+
+ACTION: D = n / A
+RESULT: A=(1/188181)  n=34  D=(6398154/1)
+
+ACTION: D = A / n
+RESULT: A=(1/188181)  n=34  D=(1/6398154)
+
+ACTION: D = (A * C) - B/C  + n
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = 1 / C
+RESULT: C=(1866567339/25)
+
+ACTION: C = -C
+RESULT: C=(-1866567339/25)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 9================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(99458487/2939222023)
+Enter two long long integers for fraction D => 2: D=(-1212000101/9919291110)
+Enter two integers m and n => m =4	  n=7
+
+
+ACTION: A = C; B = D;
+RESULT: A =(99458487/2939222023)  B=(-1212000101/9919291110)  C=(99458487/2939222023)  D=(-1212000101/9919291110)
+
+ACTION: C = A + B
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = A - B
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = A * B
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = A / B
+RESULT: A =(99458487/2939222023)  B=(-1212000101/9919291110)  C=(-986557685913150570/3562337388737424323)
+
+ACTION: C = C + 1
+RESULT: C=(2575779702824273753/3562337388737424323)
+
+ACTION: C = C - 1
+RESULT: C=(-986557685913150570/3562337388737424323)
+
+ACTION: D = A + m
+RESULT: A=(99458487/2939222023)  m=4  D=(11856346579/2939222023)
+
+ACTION: D = m + A
+RESULT: A=(99458487/2939222023)  m=4  D=(11856346579/2939222023)
+
+ACTION: D = A * n
+RESULT: A=(99458487/2939222023)  n=7  D=(696209409/2939222023)
+
+ACTION: D = n * A
+RESULT: A=(99458487/2939222023)  n=7  D=(696209409/2939222023)
+
+ACTION: D = n / A
+RESULT: A=(99458487/2939222023)  n=7  D=(20574554161/99458487)
+
+ACTION: D = A / n
+RESULT: A=(99458487/2939222023)  n=7  D=(99458487/20574554161)
+
+ACTION: D = (A * C) - B/C  + n
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = 1 / C
+RESULT: C=(-3562337388737424323/986557685913150570)
+
+ACTION: C = -C
+RESULT: C=(3562337388737424323/986557685913150570)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 10================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(-8220001/23232)
+Enter two long long integers for fraction D => 2: D=(116441111/55051051717)
+Enter two integers m and n => m =36	  n=12
+
+
+ACTION: A = C; B = D;
+RESULT: A =(-8220001/23232)  B=(116441111/55051051717)  C=(-8220001/23232)  D=(116441111/55051051717)
+
+ACTION: C = A + B
+RESULT: A =(-8220001/23232)  B=(116441111/55051051717)  C=(-452516995004900965/1278946033489344)
+
+ACTION: C = A - B
+RESULT: A =(-8220001/23232)  B=(116441111/55051051717)  C=(-452522405324682469/1278946033489344)
+
+ACTION: C = A * B
+RESULT: A =(-8220001/23232)  B=(116441111/55051051717)  C=(-957146048861111/1278946033489344)
+
+ACTION: C = A / B
+RESULT: A =(-8220001/23232)  B=(116441111/55051051717)  C=(-452519700164791717/2705159890752)
+
+ACTION: C = C + 1
+RESULT: C=(-452516995004900965/2705159890752)
+
+ACTION: C = C - 1
+RESULT: C=(-452519700164791717/2705159890752)
+
+ACTION: D = A + m
+RESULT: A=(-8220001/23232)  m=36  D=(-7383649/23232)
+
+ACTION: D = m + A
+RESULT: A=(-8220001/23232)  m=36  D=(-7383649/23232)
+
+ACTION: D = A * n
+RESULT: A=(-8220001/23232)  n=12  D=(-8220001/1936)
+
+ACTION: D = n * A
+RESULT: A=(-8220001/23232)  n=12  D=(-8220001/1936)
+
+ACTION: D = n / A
+RESULT: A=(-8220001/23232)  n=12  D=(-278784/8220001)
+
+ACTION: D = A / n
+RESULT: A=(-8220001/23232)  n=12  D=(-8220001/278784)
+
+ACTION: D = (A * C) - B/C  + n
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = 1 / C
+RESULT: C=(-2705159890752/452519700164791717)
+
+ACTION: C = -C
+RESULT: C=(2705159890752/452519700164791717)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 11================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(9010218211/883843822)
+Enter two long long integers for fraction D => 2: D=(12192912/7374345599)
+Enter two integers m and n => m =82832	  n=1212192
+
+
+ACTION: A = C; B = D;
+RESULT: A =(9010218211/883843822)  B=(12192912/7374345599)  C=(9010218211/883843822)  D=(12192912/7374345599)
+
+ACTION: C = A + B
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = A - B
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = A * B
+RESULT: A =(9010218211/883843822)  B=(12192912/7374345599)  C=(54930398873760216/3258884899484519689)
+
+ACTION: C = A / B
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = C + 1
+RESULT: C=(3313815298358279905/3258884899484519689)
+
+ACTION: C = C - 1
+RESULT: C=(54930398873760216/3258884899484519689)
+
+ACTION: D = A + m
+RESULT: A=(9010218211/883843822)  m=82832  D=(73219561682115/883843822)
+
+ACTION: D = m + A
+RESULT: A=(9010218211/883843822)  m=82832  D=(73219561682115/883843822)
+
+ACTION: D = A * n
+RESULT: A=(9010218211/883843822)  n=1212192  D=(5461057216814256/441921911)
+
+ACTION: D = n * A
+RESULT: A=(9010218211/883843822)  n=1212192  D=(5461057216814256/441921911)
+
+ACTION: D = n / A
+RESULT: A=(9010218211/883843822)  n=1212192  D=(1071388410277824/9010218211)
+
+ACTION: D = A / n
+RESULT: A=(9010218211/883843822)  n=1212192  D=(9010218211/1071388410277824)
+
+ACTION: D = (A * C) - B/C  + n
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = 1 / C
+RESULT: C=(3258884899484519689/54930398873760216)
+
+ACTION: C = -C
+RESULT: C=(-3258884899484519689/54930398873760216)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 12================
+Enter 1 to continue, -1 to finish testing => Enter two long long integers for fraction C => 1: C=(1/5)
+Enter two long long integers for fraction D => 2: D=(2329329/111032)
+Enter two integers m and n => m =56	  n=91
+
+
+ACTION: A = C; B = D;
+RESULT: A =(1/5)  B=(2329329/111032)  C=(1/5)  D=(2329329/111032)
+
+ACTION: C = A + B
+RESULT: A =(1/5)  B=(2329329/111032)  C=(11757677/555160)
+
+ACTION: C = A - B
+RESULT: A =(1/5)  B=(2329329/111032)  C=(-11535613/555160)
+
+ACTION: C = A * B
+RESULT: A =(1/5)  B=(2329329/111032)  C=(2329329/555160)
+
+ACTION: C = A / B
+RESULT: A =(1/5)  B=(2329329/111032)  C=(111032/11646645)
+
+ACTION: C = C + 1
+RESULT: C=(11757677/11646645)
+
+ACTION: C = C - 1
+RESULT: C=(111032/11646645)
+
+ACTION: D = A + m
+RESULT: A=(1/5)  m=56  D=(281/5)
+
+ACTION: D = m + A
+RESULT: A=(1/5)  m=56  D=(281/5)
+
+ACTION: D = A * n
+RESULT: A=(1/5)  n=91  D=(91/5)
+
+ACTION: D = n * A
+RESULT: A=(1/5)  n=91  D=(91/5)
+
+ACTION: D = n / A
+RESULT: A=(1/5)  n=91  D=(455/1)
+
+ACTION: D = A / n
+RESULT: A=(1/5)  n=91  D=(1/455)
+
+ACTION: D = (A * C) - B/C  + n
+ErrorMultOverflow: Action skipped!
+
+ACTION: C = 1 / C
+RESULT: C=(11646645/111032)
+
+ACTION: C = -C
+RESULT: C=(-11646645/111032)
+
+ACTION: C = A - A; C = 1 / C
+ErrorDivideByZero: Action skipped!
+
+===============Round 13================
+Enter 1 to continue, -1 to finish testing => 
