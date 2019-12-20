@@ -19,7 +19,9 @@
 #define SHK_FRACTION_H
 
 // comment the following to disable run-time overflow checking
+#ifndef NO_OVFCHECK
 #define OVFCHECK
+#endif
 
 #include <iostream>
 using std::ostream;
